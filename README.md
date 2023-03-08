@@ -1,6 +1,14 @@
-# Fuzzing Summaries
+# Awesome Fuzzing Papers
 
-Summaries and relationship data for fuzzing papers.
+Summaries and relationship data for fuzzing papers. Note that not all of these
+papers have been selected for incredible impact, but instead to try to collect
+as many papers as possible with as much context as possible in order to expand
+the public knowledge of fuzzing.
+
+Paper summaries are written to be as close to plain English as possible, and
+glossary entries will be provided for common words/acronyms used in fuzzing.
+This repository, and the (soon-to-be) associated website, serve as a means to
+make fuzzing literature as accessible and explorable as reasonably possible.
 
 ## General idea
 
