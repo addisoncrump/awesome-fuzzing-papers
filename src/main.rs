@@ -1,7 +1,7 @@
 use biblatex::Bibliography;
 use log::LevelFilter;
 use petgraph::graphmap::DiGraphMap;
-use std::collections::{HashMap, HashSet};
+use std::collections::{BTreeSet, HashMap};
 use std::error::Error;
 use std::fs::read_to_string;
 use std::path::PathBuf;
@@ -9,7 +9,7 @@ use std::process::ExitCode;
 
 fn main() -> Result<ExitCode, Box<dyn Error>> {
     env_logger::builder()
-        .filter_level(LevelFilter::Warn)
+        .filter_level(LevelFilter::Info)
         .parse_default_env()
         .init();
 
@@ -25,6 +25,7 @@ fn main() -> Result<ExitCode, Box<dyn Error>> {
     let summary_dir = PathBuf::from("summaries");
     for entry in all.iter() {
         let name = entry.key.as_str();
+        refmap.add_node(name);
         assert!(
             name.chars().all(|c| c.is_ascii_alphanumeric() || c == '-'),
             "while processing {name}: expected only keywords containing alphanumerics and hyphens!"
@@ -55,8 +56,8 @@ fn main() -> Result<ExitCode, Box<dyn Error>> {
                 log::debug!("{name}: {keyword}");
                 keyword_map
                     .entry(keyword)
-                    .or_insert_with(HashSet::new)
-                    .insert(name);
+                    .or_insert_with(Vec::new)
+                    .push(name);
             }
         } else {
             log::error!("Missing keywords for {name}.");
@@ -83,16 +84,15 @@ fn main() -> Result<ExitCode, Box<dyn Error>> {
                 }
                 author_map
                     .entry(author_key)
-                    .or_insert_with(HashSet::new)
-                    .insert(name);
+                    .or_insert_with(Vec::new)
+                    .push(name);
             }
         } else {
             log::error!("Missing authors for {name}.");
             data_missing = true;
         }
         if entry.fields.get("url").is_none() {
-            log::error!("Missing URL for {name}.");
-            data_missing = true;
+            panic!("Missing URL for {name}."); // absolutely must not happen
         }
         if let Some(crossrefs) = entry.fields.get("crossref") {
             assert_eq!(
@@ -121,6 +121,21 @@ fn main() -> Result<ExitCode, Box<dyn Error>> {
     log::debug!("{:#?}", keyword_map);
     log::debug!("{:#?}", author_map);
     log::debug!("{:#?}", refmap);
+
+    let titles = refmap.nodes().collect::<BTreeSet<_>>();
+    for title in &titles {
+        let entry = all.get(title).unwrap();
+        log::info!(
+            "Generating data for {}...",
+            entry
+                .get("title")
+                .unwrap()
+                .into_iter()
+                .map(|s| s.v.get())
+                .collect::<Vec<_>>()
+                .join("")
+        );
+    }
 
     if data_missing {
         Ok(ExitCode::FAILURE)

@@ -19,9 +19,10 @@ to make this.
 
 This repository contains summaries, bibliographies, and referrer/referee data
 for as many fuzzing papers and works as I could read and summarise. Note that
-not everything must be an _academic_ paper; tool reports/whitepapers are also
-on the table, provided that they do not conflict with any requirements specified
-in the final section of this README.
+not everything must be an _academic_ paper; tool reports, whitepapers,
+presentations, audio recordings, etc. are also on the table, provided that they
+do not conflict with any requirements specified in the final section of this
+README.
 
 ## "I want a paper summarised!"
 
