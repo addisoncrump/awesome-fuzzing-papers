@@ -54,3 +54,9 @@ It should _not_ contain:
 [AFL++]: https://github.com/AFLplusplus/AFLplusplus
 [epi051's experience with LibAFL]: https://epi052.gitlab.io/notes-to-self/blog/2021-11-01-fuzzing-101-with-libafl/
 [Brendan Dolan-Gavitt's secondary analysis of NEUZZ]: https://twitter.com/moyix/status/1513608538500870154
+
+## Adding a new paper
+
+The following fields should be present:
+ - author
+ - 

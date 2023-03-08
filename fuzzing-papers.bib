@@ -10,7 +10,8 @@
     booktitle = {Proceedings of the 29th ACM Joint Meeting on European Software Engineering Conference and Symposium on the Foundations of Software Engineering},
     pages = {1393–1403},
     numpages = {11},
-    series = {ESEC/FSE 2021}
+    series = {ESEC/FSE 2021},
+    keywords = {fuzzing, evaluation, analysis, replication, meta, best-practice, meta-analysis, benchmarking, source-code-available},
 }
 
 @inproceedings{evaluating-fuzz-testing,
@@ -26,9 +27,9 @@
     booktitle = {Proceedings of the 2018 ACM SIGSAC Conference on Computer and Communications Security},
     pages = {2123–2138},
     numpages = {16},
-    keywords = {evaluation, fuzzing, security},
     location = {Toronto, Canada},
-    series = {CCS '18}
+    series = {CCS '18},
+    keywords = {fuzzing, evaluation, analysis, replication, meta, best-practice, meta-analysis, benchmarking, statistics},
 }
 
 @inproceedings{symsan,
@@ -42,11 +43,722 @@
     url = {https://www.usenix.org/conference/usenixsecurity22/presentation/chen-ju},
     publisher = {USENIX Association},
     month = aug,
+    keywords = {fuzzing, concolic, sanitizers, dataflow, llvm, instrumentation, source-code-available},
 }
 
 @inproceedings{codamosa,
-    title={CODAMOSA: Escaping Coverage Plateaus in Test Generation with Pre-trained Large Language Models},
-    author={Lemieux, Caroline and Inala, Jeevana Priya and Lahiri, Shuvendu K and Sen, Siddhartha},
-    booktitle={45th International Conference on Software Engineering, ser. ICSE},
-    year={2023}
+    title = {CODAMOSA: Escaping Coverage Plateaus in Test Generation with Pre-trained Large Language Models},
+    author = {Lemieux, Caroline and Inala, Jeevana Priya and Lahiri, Shuvendu K and Sen, Siddhartha},
+    booktitle = {45th International Conference on Software Engineering, ser. ICSE},
+    url = {https://www.carolemieux.com/codamosa_icse23.pdf},
+    year = {2023},
+    keywords = {search-based-software-testing, test-generation, codex, large-language-models, pre-trained, source-code-available},
+    crossref = {fuzzbench},
+}
+
+@article{wasm-mutate,
+    title = {Wasm-mutate: Fuzzing WebAssembly Compilers with E-Graphs},
+    author = {Arteaga, Javier Cabrera and Fitzgerald, Nicholas and Monperrus, Martin and Baudry, Benoit},
+    pages = {2},
+    language = {en},
+    url = {https://www.jacarte.me/assets/pdf/wasm_mutate.pdf},
+}
+
+@inproceedings{ijon,
+    address = {Los Alamitos, CA, USA},
+    title = {IJON: Exploring Deep State Spaces via Fuzzing},
+    url = {https://doi.ieeecomputersociety.org/10.1109/SP40000.2020.00050},
+    DOI = {10.1109/SP40000.2020.00050},
+    booktitle = {2020 IEEE Symposium on Security and Privacy (SP)},
+    publisher = {IEEE Computer Society},
+    author = {Cornelius Aschermann, Sergej Schumilo, Ali Abbasi, and Thorsten Holz},
+    year = {2020},
+    pages = {893–908}
+}
+
+@inproceedings{redqueen,
+    address = {San Diego, CA},
+    title = {REDQUEEN: Fuzzing with Input-to-State Correspondence},
+    ISBN = {978-1-891562-55-6},
+    url = {https://www.ndss-symposium.org/wp-content/uploads/2019/02/ndss2019_04A-2_Aschermann_paper.pdf},
+    DOI = {10.14722/ndss.2019.23371},
+    booktitle = {Proceedings 2019 Network and Distributed System Security Symposium},
+    publisher = {Internet Society},
+    author = {Aschermann, Cornelius and Schumilo, Sergej and Blazytko, Tim and Gawlik, Robert and Holz, Thorsten},
+    year = {2019},
+    language = {en}
+}
+
+@inproceedings{grimoire,
+    address = {Santa Clara, CA, USA},
+    title = {GRIMOIRE: Synthesizing Structure while Fuzzing},
+    ISBN = {978-1-939133-06-9},
+    url = {https://www.usenix.org/conference/usenixsecurity19/presentation/blazytko},
+    booktitle = {28th USENIX Security Symposium (USENIX Security 19)},
+    publisher = {USENIX Association},
+    author = {Blazytko, Tim and Aschermann, Cornelius and Schlögel, Moritz and Abbasi, Ali and Schumilo, Sergej and Wörner, Simon and Holz, Thorsten},
+    year = {2019},
+    month = {Aug},
+    pages = {1985–2002}
+}
+
+@article{fuzzing-challenges-and-reflections,
+    title = {Fuzzing: Challenges and Reflections},
+    volume = {38},
+    ISSN = {0740-7459, 1937-4194},
+    DOI = {10.1109/MS.2020.3016773},
+    number = {3},
+    journal = {IEEE Software},
+    author = {Böhme, Marcel and Cadar, Cristian and Roychoudhury, Abhik},
+    year = {2021},
+    month = {May},
+    pages = {79–86}
+}
+
+@inproceedings{exponential-cost-vuln-discovery,
+    address = {Virtual Event, USA},
+    title = {Fuzzing: on the exponential cost of vulnerability discovery},
+    ISBN = {978-1-4503-7043-1},
+    url = {https://dl.acm.org/doi/10.1145/3368089.3409729},
+    DOI = {10.1145/3368089.3409729},
+    booktitle = {ESEC/FSE ’20: 28th ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering},
+    publisher = {ACM},
+    author = {Böhme, Marcel and Falk, Brandon},
+    year = {2020},
+    month = {Nov},
+    pages = {713–724},
+    language = {en}
+}
+
+@inproceedings{greybox-fuzzing-as-markov-chain,
+    address = {Vienna Austria},
+    title = {Coverage-based Greybox Fuzzing as Markov Chain},
+    ISBN = {978-1-4503-4139-4},
+    url = {https://dl.acm.org/doi/10.1145/2976749.2978428},
+    DOI = {10.1145/2976749.2978428},
+    booktitle = {Proceedings of the 2016 ACM SIGSAC Conference on Computer and Communications Security},
+    publisher = {ACM},
+    author = {Böhme, Marcel and Pham, Van-Thuan and Roychoudhury, Abhik},
+    year = {2016},
+    month = {Oct},
+    pages = {1032–1043},
+    language = {en}
+}
+
+@inproceedings{fuzzer-benchmarking-reliability,
+    address = {Pittsburgh, PA, USA},
+    title = {On the reliability of coverage-based fuzzer benchmarking},
+    ISBN = {978-1-4503-9221-1},
+    url = {https://dl.acm.org/doi/10.1145/3510003.3510230},
+    DOI = {10.1145/3510003.3510230},
+    booktitle = {Proceedings of the 44th International Conference on Software Engineering},
+    publisher = {ACM},
+    author = {Böhme, Marcel and Szekeres, László and Metzman, Jonathan},
+    year = {2022},
+    month = {May},
+    pages = {1621–1633},
+    language = {en}
+}
+
+@inproceedings{sym-expr-fuzzing,
+    title = {Fuzzing Symbolic Expressions},
+    DOI = {10.1109/ICSE43902.2021.00071},
+    booktitle = {2021 IEEE/ACM 43rd International Conference on Software Engineering (ICSE)},
+    author = {Borzacchiello, Luca and Coppa, Emilio and Demetrescu, Camil},
+    year = {2021},
+    pages = {711–722}
+}
+
+@inproceedings{enfuzz,
+    title = {{EnFuzz}: Ensemble Fuzzing with Seed Synchronization among Diverse Fuzzers},
+    ISBN = {978-1-939133-06-9},
+    url = {https://www.usenix.org/conference/usenixsecurity19/presentation/chen-yuanliang},
+    author = {Chen, Yuanliang and Jiang, Yu and Ma, Fuchen and Liang, Jie and Wang, Mingzhe and Zhou, Chijin and Jiao, Xun and Su, Zhuo},
+    year = {2019},
+    pages = {1967–1983},
+    language = {en}
+}
+
+@inproceedings{empirical-oss-fuzz-bugs,
+    address = {Madrid, Spain},
+    title = {An Empirical Study of OSS-Fuzz Bugs},
+    ISBN = {978-1-72818-710-5},
+    url = {https://ieeexplore.ieee.org/document/9463112/},
+    DOI = {10.1109/MSR52588.2021.00026},
+    booktitle = {2021 IEEE/ACM 18th International Conference on Mining Software Repositories (MSR)},
+    publisher = {IEEE},
+    author = {Ding, Zhen Yu and Le Goues, Claire},
+    year = {2021},
+    month = {May},
+    pages = {131–142}
+}
+
+@inproceedings{likely-invariants,
+    title = {The Use of Likely Invariants as Feedback for Fuzzers},
+    url = {https://www.usenix.org/conference/usenixsecurity21/presentation/fioraldi},
+    booktitle = {30th USENIX Security Symposium (USENIX Security 21)},
+    publisher = {USENIX Association},
+    author = {Fioraldi, Andrea and D’Elia, Daniele Cono and Balzarotti, Davide},
+    year = {2021},
+    month = {Aug}
+}
+
+@inproceedings{qasan,
+    title = {Fuzzing Binaries for Memory Safety Errors with QASan},
+    booktitle = {2020 IEEE Secure Development Conference (SecDev)},
+    author = {Fioraldi, Andrea and D’Elia, Daniele Cono and Querzoni, Leonardo},
+    year = {2020}
+}
+
+@inproceedings{aflplusplus,
+    title = {AFL++: Combining Incremental Steps of Fuzzing Research},
+    url = {https://www.usenix.org/conference/woot20/presentation/fioraldi},
+    booktitle = {14th USENIX Workshop on Offensive Technologies (WOOT 20)},
+    publisher = {USENIX Association},
+    author = {Fioraldi, Andrea and Maier, Dominik and Eißfeldt, Heiko and Heuse, Marc},
+    year = {2020},
+    month = {Aug}
+}
+
+@inproceedings{fuzzer-appeal,
+    title = {A Practical, Principled Measure of Fuzzer Appeal: A Preliminary Study},
+    ISBN = {978-1-72818-913-0},
+    url = {https://ieeexplore.ieee.org/document/9282794/},
+    DOI = {10.1109/QRS51102.2020.00071},
+    abstractNote = {Fuzzers are important bug-finding tools in both academia and industry. To ensure scientific progress, we need a metric for fuzzer comparison. Bug-based metrics are impractical because (1) the definition of “bug” is vague, and (2) mapping bugrevealing inputs to bugs requires extensive domain knowledge.}, booktitle = {2020 IEEE 20th International Conference on Software Quality, Reliability and Security (QRS)},
+    publisher = {IEEE},
+    author = {Gavrilov, Miroslav and Dewey, Kyle and Groce, Alex and Zamanzadeh, Davina and Hardekopf, Ben},
+    year = {2020},
+    month = {Dec},
+    pages = {510–517}
+}
+
+@article{sage-whitebox-testing,
+    title = {SAGE: whitebox fuzzing for security testing},
+    volume = {55},
+    ISSN = {0001-0782, 1557-7317},
+    DOI = {10.1145/2093548.2093564},
+    abstractNote = {SAGE has had a remarkable impact at Microsoft.},
+    number = {3},
+    journal = {Communications of the ACM},
+    author = {Godefroid, Patrice and Levin, Michael and Molnar, David},
+    year = {2012},
+    month = {Mar},
+    pages = {40–44},
+    language = {en}
+}
+
+@misc{mutation-analysis,
+    title = {Mutation Analysis: Answering the Fuzzing Challenge},
+    url = {http://arxiv.org/abs/2201.11303},
+    abstractNote = {Fuzzing is one of the fastest growing fields in software testing. The idea behind fuzzing is to check the behavior of software against a large number of randomly generated inputs, trying to cover all interesting parts of the input space, while observing the tested software for anomalous behaviour. One of the biggest challenges facing fuzzer users is how to validate software behavior, and how to improve the quality of oracles used. While mutation analysis is the premier technique for evaluating the quality of software test oracles, mutation score is rarely used as a metric for evaluating fuzzer quality. Unless mutation analysis researchers can solve multiple problems that make applying mutation analysis to fuzzing challenging, mutation analysis may be permanently sidelined in one of the most important areas of testing and security research. This paper attempts to understand the main challenges in applying mutation analysis for evaluating fuzzers, so that researchers can focus on solving these challenges.},
+    publisher = {arXiv},
+    author = {Gopinath, Rahul and Görz, Philipp and Groce, Alex},
+    year = {2022},
+    month = {Feb}
+}
+
+@misc{sample-free-grammar-learning,
+    title = {Sample-Free Learning of Input Grammars for Comprehensive Software Fuzzing},
+    url = {http://arxiv.org/abs/1810.08289},
+    abstractNote = {Generating valid test inputs for a program is much easier if one knows the input language. We present first successes for a technique that, given a program P without any input samples or models, learns an input grammar that represents the syntactically valid inputs for P – a grammar which can then be used for highly effective test generation for P . To this end, we introduce a test generator targeted at input parsers that systematically explores parsing alternatives based on dynamic tracking of constraints; the resulting inputs go into a grammar learner producing a grammar that can then be used for fuzzing. In our evaluation on subjects such as JSON, URL, or Mathexpr, our PYGMALION prototype took only a few minutes to infer grammars and generate thousands of valid high-quality inputs.},
+    publisher = {arXiv},
+    author = {Gopinath, Rahul and Mathis, Björn and Höschele, Mathias and Kampmann, Alexander and Zeller, Andreas},
+    year = {2018},
+    month = {Oct}
+}
+
+@misc{comparing-fuzzers,
+    title = {How to Compare Fuzzers},
+    author = {Görz, Philipp and Mathis, Bjorn and Hassler, Keno and Güler, Emre and Holz, Thorsten and Zeller, Andreas and Gopinath, Rahul},
+    year = {2023}
+}
+
+@inproceedings{wafl,
+    address = {Vienna, Austria},
+    title = {WAFL: Binary-Only WebAssembly Fuzzing with Fast Snapshots},
+    ISBN = {978-1-4503-9602-8},
+    url = {https://dl.acm.org/doi/10.1145/3503921.3503924},
+    DOI = {10.1145/3503921.3503924},
+    booktitle = {Reversing and Offensive-oriented Trends Symposium},
+    publisher = {ACM},
+    author = {Hassler, Keno and Maier, Dominik},
+    year = {2021},
+    month = {Nov},
+    pages = {23–30},
+    language = {en}
+}
+
+@article{magma,
+    title = {Magma: A Ground-Truth Fuzzing Benchmark},
+    volume = {4},
+    ISSN = {2476-1249},
+    DOI = {10.1145/3428334},
+    number = {3},
+    journal = {Proceedings of the ACM on Measurement and Analysis of Computing Systems},
+    author = {Hazimeh, Ahmad and Herrera, Adrian and Payer, Mathias},
+    year = {2020},
+    month = {Nov},
+    pages = {1–29},
+    language = {en}
+}
+
+@inproceedings{Grammarinator,
+    address = {Lake Buena Vista FL USA},
+    title = {Grammarinator: a grammar-based open source fuzzer},
+    ISBN = {978-1-4503-6053-1},
+    url = {https://dl.acm.org/doi/10.1145/3278186.3278193},
+    DOI = {10.1145/3278186.3278193},
+    booktitle = {Proceedings of the 9th ACM SIGSOFT International Workshop on Automating TEST Case Design, Selection, and Evaluation},
+    publisher = {ACM},
+    author = {Hodován, Renáta and Kiss, Ákos and Gyimóthy, Tibor},
+    year = {2018},
+    month = {Nov},
+    pages = {45–48},
+    language = {en}
+}
+
+@inproceedings{instrim,
+    address = {San Diego, CA},
+    title = {INSTRIM: Lightweight Instrumentation for Coverage-guided Fuzzing},
+    ISBN = {978-1-891562-50-1},
+    url = {https://www.ndss-symposium.org/wp-content/uploads/2018/07/bar2018_14_Hsu_paper.pdf},
+    DOI = {10.14722/bar.2018.23014},
+    booktitle = {Proceedings 2018 Workshop on Binary Analysis Research},
+    publisher = {Internet Society},
+    author = {Hsu, Chin-Chia and Wu, Che-Yu and Hsiao, Hsu-Chun and Huang, Shih-Kun},
+    year = {2018},
+    language = {en}
+}
+
+@misc{fuzzcoin,
+    title = {FuzzCoin: A Digital Currency with Fuzzing as a Proof-of-Work},
+    url = {https://fuzzcoin.kr},
+    author = {Jang, Daehee and Askar, Ammar},
+    year = {2020}
+}
+
+@article{darwin,
+    title = {DARWIN: Survival of the Fittest Fuzzing Mutators},
+    abstractNote = {Fuzzing is an automated software testing technique broadly adopted by the industry. A popular variant is mutationbased fuzzing, which discovers a large number of bugs in practice. While the research community has studied mutationbased fuzzing for years now, the algorithms’ interactions within the fuzzer are highly complex and can, together with the randomness in every instance of a fuzzer, lead to unpredictable effects. Most efforts to improve this fragile interaction focused on optimizing seed scheduling. However, real-world results like Google’s FuzzBench highlight that these approaches do not consistently show improvements in practice. Another approach to improve the fuzzing process algorithmically is optimizing mutation scheduling. Unfortunately, existing mutation scheduling approaches also failed to convince because of missing real-world improvements or too many user-controlled parameters whose conﬁguration requires expert knowledge about the target program. This leaves the challenging problem of cleverly processing test cases and achieving a measurable improvement unsolved.},
+    author = {Jauernig, Patrick and Jakobovic, Domagoj and Picek, Stjepan and Stapf, Emmanuel and Sadeghi, Ahmad-Reza},
+    language = {en}
+}
+
+@inproceedings{fuzzan,
+    title = {FuZZan: Efficient Sanitizer Metadata Design for Fuzzing},
+    ISBN = {978-1-939133-14-4},
+    url = {https://www.usenix.org/conference/atc20/presentation/jeon},
+    booktitle = {2020 USENIX Annual Technical Conference (USENIX ATC 20)},
+    publisher = {USENIX Association},
+    author = {Jeon, Yuseok and Han, WookHyun and Burow, Nathan and Payer, Mathias},
+    year = {2020},
+    month = {Jul},
+    pages = {249–263}
+}
+
+@inproceedings{fuzzification,
+    address = {Santa Clara, CA, USA},
+    title = {Fuzzification: Anti-Fuzzing Techniques},
+    ISBN = {978-1-939133-06-9},
+    url = {https://www.usenix.org/conference/usenixsecurity19/presentation/jung},
+    booktitle = {Proceedings of the 28th USENIX Security Symposium},
+    publisher = {USENIX Association},
+    author = {Jung, Jinho and Hu, Hong and Solodukhin, David and Pagan, Daniel and Lee, Kyu Hyung and Kim, Taesoo},
+    year = {2019},
+    month = {Aug},
+    pages = {1913–1930}
+}
+
+@inproceedings{dreaming-metamorphic-relations,
+    title = {Dreaming up Metamorphic Relations: Experiences from Three Fuzzer Tools},
+    DOI = {10.1109/MET52542.2021.00017},
+    abstractNote = {Metamorphic testing requires the availability of a suitable set of metamorphic relations (MRs) for the application domain of interest. A software testing practitioner interested in using metamorphic testing is thus blocked unless they can devise a suitable set of MRs. In this paper we offer some practical advice on sources of inspiration for MRs, based on our experience building three fuzzing tools based on metamorphic testing: MF++, which supports automated testing of C++11 libraries, C4, which tests concurrency support in C11 compilers, and spirv-fuzz, which aims to find bugs in compilers for the SPIR-V programming language (mainly used in computer graphics). The MRs we have devised have taken inspiration from three main sources: (1) careful study of specification documents related to the libraries and programming languages that these tools target, (2) consultation of prior work and discussion with domain experts, and (3) manual inspection of the results of automated code coverage analysis on the systems under test. We describe these sources of inspiration in detail, giving a range of concrete examples for each. We hope that this experience report will help to inform developers of future metamorphic testing tools as to the steps they can take to discover MRs in their domains of interest.},
+    booktitle = {2021 IEEE/ACM 6th International Workshop on Metamorphic Testing (MET)},
+    author = {Lascu, Andrei and Windsor, Matt and Donaldson, Alastair and Grosser, Tobias and Wickerson, John},
+    year = {2021},
+    month = {Jun},
+    pages = {61–68}
+}
+
+@inproceedings{fairfuzz,
+    address = {Montpellier France},
+    title = {FairFuzz: a targeted mutation strategy for increasing greybox fuzz testing coverage},
+    ISBN = {978-1-4503-5937-5},
+    url = {https://dl.acm.org/doi/10.1145/3238147.3238176},
+    DOI = {10.1145/3238147.3238176},
+    booktitle = {Proceedings of the 33rd ACM/IEEE International Conference on Automated Software Engineering},
+    publisher = {ACM},
+    author = {Lemieux, Caroline and Sen, Koushik},
+    year = {2018},
+    month = {Sep},
+    pages = {475–485},
+    language = {en}
+}
+
+@inproceedings{pmfuzz,
+    title = {PMFuzz: Test Case Generation for Persistent Memory Programs},
+    booktitle = {Proceedings of the Twenty-sixth International Conference on Architectural Support for Programming Languages and Operating Systems},
+    author = {Liu, Sihang and Mahar, Suyash and Ray, Baishakhi and Khan, Samira},
+    year = {2021}
+}
+
+@inproceedings{mopt,
+    address = {Santa Clara, CA},
+    title = {MOPT: Optimized Mutation Scheduling for Fuzzers},
+    ISBN = {978-1-939133-06-9},
+    url = {https://www.usenix.org/conference/usenixsecurity19/presentation/lyu},
+    booktitle = {28th USENIX Security Symposium (USENIX Security 19)}, publisher = {USENIX Association},
+    author = {Lyu, Chenyang and Ji, Shouling and Zhang, Chao and Li, Yuwei and Lee, Wei-Han and Song, Yu and Beyah, Raheem},
+    year = {2019},
+    month = {Aug},
+    pages = {1949–1966}
+}
+
+@inproceedings{basesafe,
+    address = {New York, NY, USA},
+    series = {WiSec ’20},
+    title = {BaseSAFE: Baseband Sanitized Fuzzing through Emulation},
+    ISBN = {978-1-4503-8006-5},
+    url = {https://doi.org/10.1145/3395351.3399360},
+    DOI = {10.1145/3395351.3399360},
+    booktitle = {Proceedings of the 13th ACM Conference on Security and Privacy in Wireless and Mobile Networks},
+    publisher = {Association for Computing Machinery},
+    author = {Maier, Dominik and Seidel, Lukas and Park, Shinjo},
+    year = {2020},
+    pages = {122–132},
+    collection = {WiSec ’20}
+}
+
+@inproceedings{fuzzing-data-dependency,
+    address = {Genoa, Italy},
+    title = {Fuzzing with Data Dependency Information},
+    ISBN = {978-1-66541-614-6},
+    url = {https://ieeexplore.ieee.org/document/9797358/},
+    DOI = {10.1109/EuroSP53844.2022.00026},
+    booktitle = {2022 IEEE 7th European Symposium on Security and Privacy (EuroS&P)},
+    publisher = {IEEE},
+    author = {Mantovani, Alessandro and Fioraldi, Andrea and Balzarotti, Davide},
+    year = {2022},
+    month = {Jun},
+    pages = {286–302}
+}
+
+@misc{your-browser-is-my-fuzzer,
+    address = {San Francisco, CA},
+    title = {Your Browser is my Fuzzer: Fuzzing Native Applications in Web Browsers},
+    url = {https://raw.githubusercontent.com/jonathanmetzman/wasm-fuzzing-demo/master/meetup-Fuzzing-Native-Applications-in-Browsers-With-WASM.pdf},
+    author = {Metzman, Jonathan},
+    year = {2019},
+    month = {Dec},
+    language = {en}
+}
+
+@misc{fuzzing-beyond-memory,
+    title = {Fuzzing beyond memory corruption: Finding broader classes of vulnerabilities automatically},
+    url = {https://security.googleblog.com/2022/09/fuzzing-beyond-memory-corruption.html},
+    journal = {Google Security Blog},
+    author = {Metzman, Jonathan and Liu, Dongge and Chang, Oliver},
+    year = {2022},
+    month = {Sep},
+    language = {en}
+}
+
+@inproceedings{breaking-through-binaries,
+    title = {Breaking Through Binaries: Compiler-quality Instrumentation for Better Binary-only Fuzzing},
+    ISBN = {978-1-939133-24-3},
+    url = {https://www.usenix.org/conference/usenixsecurity21/presentation/nagy},
+    booktitle = {30th USENIX Security Symposium (USENIX Security 21)},
+    publisher = {USENIX Association},
+    author = {Nagy, Stefan and Nguyen-Tuong, Anh and Hiser, Jason and Davidson, Jack and Hicks, Matthew},
+    year = {2021},
+    month = {Aug},
+    pages = {1683–1700}
+}
+
+@inproceedings{collabfuzz,
+    address = {New York, NY, USA},
+    series = {EuroSec ’21},
+    title = {CollabFuzz: A Framework for Collaborative Fuzzing},
+    ISBN = {978-1-4503-8337-0},
+    url = {https://doi.org/10.1145/3447852.3458720},
+    DOI = {10.1145/3447852.3458720},
+    abstractNote = {In the recent past, there has been lots of work on improving fuzz testing. In prior work, EnFuzz showed that by sharing progress among different fuzzers, they can perform better than the sum of their parts. In this paper, we continue this line of work and present CollabFuzz, a collaborative fuzzing framework allowing multiple different fuzzers to collaborate under an informed scheduling policy based on a number of central analyses. More specifically, CollabFuzz is a generic framework that allows a user to express different test case scheduling policies, such as the collaborative approach presented by EnFuzz. CollabFuzz can control which tests cases are handed out to what fuzzer and allows the orchestration of different fuzzers across the network. Furthermore, it allows the centralized analysis of the test cases generated by the various fuzzers under its control, allowing to implement scheduling policies based on the results of arbitrary program (e.g., data-flow) analysis.},
+    booktitle = {Proceedings of the 14th European Workshop on Systems Security},
+    publisher = {Association for Computing Machinery},
+    author = {Österlund, Sebastian and Geretto, Elia and Jemmett, Andrea and Güler, Emre and Görz, Philipp and Holz, Thorsten and Giuffrida, Cristiano and Bos, Herbert},
+    year = {2021},
+    month = {Apr},
+    pages = {1–7},
+    collection = {EuroSec ’21}
+}
+
+@inproceedings{parmesan,
+    title = {ParmeSan: Sanitizer-guided Greybox Fuzzing},
+    ISBN = {978-1-939133-17-5},
+    url = {https://www.usenix.org/conference/usenixsecurity20/presentation/osterlund},
+    booktitle = {29th USENIX Security Symposium (USENIX Security 20)},
+    publisher = {USENIX Association},
+    author = {Österlund, Sebastian and Razavi, Kaveh and Bos, Herbert and Giuffrida, Cristiano},
+    year = {2020},
+    month = {Aug},
+    pages = {2289–2306}
+}
+
+@article{smart-greybox-fuzzing,
+    title = {Smart Greybox Fuzzing},
+    ISSN = {0098-5589, 1939-3520, 2326-3881},
+    DOI = {10.1109/TSE.2019.2941681},
+    journal = {IEEE Transactions on Software Engineering},
+    author = {Pham, Van-Thuan and Boehme, Marcel and Santosa, Andrew Edward and Caciulescu, Alexandru Razvan and Roychoudhury, Abhik},
+    year = {2020},
+    pages = {1–1}
+}
+
+@inproceedings{aflnet,
+    address = {Porto, Portugal},
+    title = {AFLNET: A Greybox Fuzzer for Network Protocols},
+    ISBN = {978-1-72815-778-8},
+    url = {https://ieeexplore.ieee.org/document/9159093/},
+    DOI = {10.1109/ICST46399.2020.00062},
+    booktitle = {2020 IEEE 13th International Conference on Software Testing, Validation and Verification (ICST)},
+    publisher = {IEEE},
+    author = {Pham, Van-Thuan and Bohme, Marcel and Roychoudhury, Abhik},
+    year = {2020},
+    month = {Oct},
+    pages = {460–465}
+}
+
+@article{bugsbunny,
+    title = {BugsBunny: Hopping to RTL Targets with a Directed Hardware-Design Fuzzer},
+    abstractNote = {Recent attacks on modern processors have demonstrated the severe consequences of discovering and exploiting hardware vulnerabilities. Simultaneously, the increasing complexity of modern chip designs and the ever-limited testing time presents numerous challenges to existing presilicon hardware-design veriﬁcation tools.},
+    author = {Ragab, Hany and Koning, Koen and Bos, Herbert and Giuffrida, Cristiano},
+    pages = {7},
+    language = {en}
+}
+
+@inproceedings{nyx,
+    title = {Nyx: Greybox Hypervisor Fuzzing using Fast Snapshots and Affine Types},
+    ISBN = {978-1-939133-24-3},
+    url = {https://www.usenix.org/conference/usenixsecurity21/presentation/schumilo},
+    booktitle = {30th USENIX Security Symposium (USENIX Security 21)},
+    publisher = {USENIX Association},
+    author = {Schumilo, Sergej and Aschermann, Cornelius and Abbasi, Ali and Wör-ner, Simon and Holz, Thorsten},
+    year = {2021},
+    month = {Aug},
+    pages = {2597–2614}
+}
+
+@inproceedings{continuous-fuzzing-libfuzzer-asan,
+    address = {Boston, MA, USA},
+    title = {Continuous Fuzzing with libFuzzer and AddressSanitizer},
+    ISBN = {978-1-5090-5589-0},
+    url = {http://ieeexplore.ieee.org/document/7839812/},
+    DOI = {10.1109/SecDev.2016.043},
+    booktitle = {2016 IEEE Cybersecurity Development (SecDev)},
+    publisher = {IEEE},
+    author = {Serebryany, Kosta},
+    year = {2016},
+    month = {Nov},
+    pages = {157–157}
+}
+
+@inproceedings{oss-fuzz,
+    address = {Vancouver, BC},
+    title = {OSS-Fuzz - Google’s continuous fuzzing service for open source software},
+    publisher = {USENIX Association},
+    author = {Serebryany, Kostya},
+    year = {2017},
+    month = {Aug}
+}
+
+@inbook{static-analysis-fuzzing-aid,
+    address = {Cham},
+    title = {Static Program Analysis as a Fuzzing Aid},
+    volume = {10453},
+    ISBN = {978-3-319-66331-9},
+    url = {http://link.springer.com/10.1007/978-3-319-66332-6_2},
+    DOI = {10.1007/978-3-319-66332-6_2},
+    booktitle = {Research in Attacks, Intrusions, and Defenses},
+    publisher = {Springer International Publishing},
+    author = {Shastry, Bhargava and Leutner, Markus and Fiebig, Tobias and Thimmaraju, Kashyap and Yamaguchi, Fabian and Rieck, Konrad and Schmid, Stefan and Seifert, Jean-Pierre and Feldmann, Anja},
+    editor = {Dacier, Marc and Bailey, Michael and Polychronakis, Michalis and Antonakakis, Manos},
+    year = {2017},
+    pages = {26–47}
+}
+
+@inproceedings{agamotto,
+    title = {Agamotto: Accelerating Kernel Driver Fuzzing with Lightweight Virtual Machine Checkpoints},
+    ISBN = {978-1-939133-17-5},
+    url = {https://www.usenix.org/conference/usenixsecurity20/presentation/song},
+    booktitle = {29th USENIX Security Symposium (USENIX Security 20)},
+    publisher = {USENIX Association},
+    author = {Song, Dokyung and Hetzelt, Felicitas and Kim, Jonghwan and Kang, Brent ByungHoon and Seifert, Jean-Pierre and Franz, Michael},
+    year = {2020},
+    month = {Aug},
+    pages = {2541–2557}
+}
+
+@inproceedings{gramatron,
+    address = {New York, NY, USA},
+    series = {ISSTA 2021},
+    title = {Gramatron: Effective Grammar-Aware Fuzzing},
+    url = {http://nebelwelt.net/files/21ISSTA.pdf},
+    DOI = {10.1145/3460319.3464814},
+    booktitle = {Proceedings of the 30th ACM SIGSOFT International Symposium on Software Testing and Analysis},
+    publisher = {Association for Computing Machinery},
+    author = {Srivastava, Prashast and Payer, Mathias},
+    year = {2021},
+    collection = {ISSTA 2021}
+}
+
+@article{fuzzing-hardware-like-software,
+    title = {Fuzzing Hardware Like Software},
+    url = {http://arxiv.org/abs/2102.02308},
+    DOI = {10.48550/arXiv.2102.02308},
+    abstractNote = {Hardware flaws are permanent and potent: hardware cannot be patched once fabricated, and any flaws may undermine any software executing on top. Consequently, verification time dominates implementation time. The gold standard in hardware Design Verification (DV) is concentrated at two extremes: random dynamic verification and formal verification. Both struggle to root out the subtle flaws in complex hardware that often manifest as security vulnerabilities. The root problem with random verification is its undirected nature, making it inefficient, while formal verification is constrained by the state-space explosion problem, making it infeasible against complex designs. What is needed is a solution that is directed, yet under-constrained. Instead of making incremental improvements to existing DV approaches, we leverage the observation that existing software fuzzers already provide such a solution, and adapt them for hardware DV. Specifically, we translate RTL hardware to a software model and fuzz that model. The central challenge we address is how best to mitigate the differences between the hardware execution model and software execution model. This includes: 1) how to represent test cases, 2) what is the hardware equivalent of a crash, 3) what is an appropriate coverage metric, and 4) how to create a general-purpose fuzzing harness for hardware. To evaluate our approach, we fuzz four IP blocks from Google’s OpenTitan SoC. Our experiments reveal a two orders-of-magnitude reduction in run time to achieve Finite State Machine (FSM) coverage over traditional dynamic verification schemes. Moreover, with our design-agnostic harness, we achieve over 88% HDL line coverage in three out of four of our designs -- even without any initial seeds.},
+    note = {arXiv:2102.02308 [cs]},
+    number = {arXiv:2102.02308},
+    publisher = {arXiv},
+    author = {Trippel, Timothy and Shin, Kang and Chernyakhovsky, Alex and Kelly, Garret and Rizzo, Dominic and Hicks, Matthew},
+    year = {2021},
+    month = {Feb}
+}
+
+@inproceedings{be-sensitive-and-collaborative,
+    address = {Chaoyang District, Beijing},
+    title = {Be Sensitive and Collaborative: Analyzing Impact of Coverage Metrics in Greybox Fuzzing},
+    ISBN = {978-1-939133-07-6},
+    url = {https://www.usenix.org/conference/raid2019/presentation/wang},
+    booktitle = {22nd International Symposium on Research in Attacks, Intrusions and Defenses (RAID 2019)},
+    publisher = {USENIX Association},
+    author = {Wang, Jinghan and Duan, Yue and Song, Wei and Yin, Heng and Song, Chengyu},
+    year = {2019},
+    month = {Sep},
+    pages = {1–15}
+}
+
+@inproceedings{taintscope,
+    address = {Oakland, CA, USA},
+    title = {TaintScope: A Checksum-Aware Directed Fuzzing Tool for Automatic Software Vulnerability Detection},
+    ISBN = {978-1-4244-6894-2},
+    url = {http://ieeexplore.ieee.org/document/5504701/},
+    DOI = {10.1109/SP.2010.37},
+    booktitle = {2010 IEEE Symposium on Security and Privacy},
+    publisher = {IEEE},
+    author = {Wang, Tielei and Wei, Tao and Gu, Guofei and Zou, Wei},
+    year = {2010},
+    pages = {497–512}
+}
+
+@inproceedings{targeted-greybox-static-lookahead,
+    address = {Seoul, South Korea},
+    title = {Targeted greybox fuzzing with static lookahead analysis},
+    ISBN = {978-1-4503-7121-6},
+    url = {https://dl.acm.org/doi/10.1145/3377811.3380388},
+    DOI = {10.1145/3377811.3380388},
+    booktitle = {Proceedings of the ACM/IEEE 42nd International Conference on Software Engineering},
+    publisher = {ACM},
+    author = {Wüstholz, Valentin and Christakis, Maria},
+    year = {2020},
+    month = {Jun},
+    pages = {789–800},
+    language = {en}
+}
+
+@inproceedings{new-operating-primitives-fuzzing,
+    address = {Dallas Texas USA},
+    title = {Designing New Operating Primitives to Improve Fuzzing Performance},
+    ISBN = {978-1-4503-4946-8},
+    url = {https://dl.acm.org/doi/10.1145/3133956.3134046},
+    DOI = {10.1145/3133956.3134046},
+    booktitle = {Proceedings of the 2017 ACM SIGSAC Conference on Computer and Communications Security},
+    publisher = {ACM},
+    author = {Xu, Wen and Kashyap, Sanidhya and Min, Changwoo and Kim, Taesoo},
+    year = {2017},
+    month = {Oct},
+    pages = {2313–2328},
+    language = {en}
+}
+
+@inproceedings{fuzzing-filesystems,
+    address = {San Francisco, CA, USA},
+    title = {Fuzzing File Systems via Two-Dimensional Input Space Exploration},
+    ISBN = {978-1-5386-6660-9},
+    url = {https://ieeexplore.ieee.org/document/8835267/},
+    DOI = {10.1109/SP.2019.00035},
+    booktitle = {2019 IEEE Symposium on Security and Privacy (SP)},
+    publisher = {IEEE},
+    author = {Xu, Wen and Moon, Hyungon and Kashyap, Sanidhya and Tseng, Po-Ning and Kim, Taesoo},
+    year = {2019},
+    month = {May},
+    pages = {818–834}
+}
+
+@article{vuln-oriented-directed-fuzzing,
+    title = {Vulnerability-oriented directed fuzzing for binary programs},
+    volume = {12},
+    ISSN = {2045-2322},
+    DOI = {10.1038/s41598-022-07355-5},
+    abstractNote = {Abstract Directed greybox fuzzing (DGF) is an effective method to detect vulnerabilities of the specified target code. Nevertheless, there are three main issues in the existing DGFs. First, the target vulnerable code of the DGFs needs to be manually selected, which is tedious. Second, DGFs mainly leverage distance information as feedback, which neglects the unequal roles of different code snippets in reaching the targets. Third, most of the existing DGFs need the source code of the test programs, which is not available for binary programs. In this paper, we propose a vulnerability-oriented directed binary fuzzing framework named VDFuzz, which automatically identifies the targets and leverages dynamic information to guide the fuzzing. In specific, VDFuzz consists of two components, a target identifier and a directed fuzzer. The target identifier is designed based on a neural-network, which can automatically locate the target code areas that are similar to the known vulnerabilities. Considering the inequality of code snippets in reaching the given target, the directed fuzzer assigns different weights to basic blocks and takes the weights as feedback to generate test cases to reach the target code. Experimental results demonstrate that VDFuzz outperformed the state-of-the-art fuzzers and was effective in vulnerability detection of real-world programs.},
+    number = {1},
+    journal = {Scientific Reports},
+    author = {Yu, Lu and Lu, Yuliang and Shen, Yi and Li, Yuwei and Pan, Zulie},
+    year = {2022},
+    month = {Mar},
+    pages = {4271},
+    language = {en}
+}
+
+@misc{afl,
+    title = {American Fuzzy Lop. Technical Whitepaper},
+    url = {https://lcamtuf.coredump.cx/afl/technical_details.txt},
+    author = {Zalewski, Michał},
+    year = {2017},
+    language = {en}
+}
+
+@inproceedings{heterofuzz,
+    address = {New York, NY, USA},
+    series = {ESEC/FSE 2021},
+    title = {HeteroFuzz: fuzz testing to detect platform dependent divergence for heterogeneous applications},
+    ISBN = {978-1-4503-8562-6},
+    url = {https://doi.org/10.1145/3468264.3468610},
+    DOI = {10.1145/3468264.3468610},
+    abstractNote = {As specialized hardware accelerators like FPGAs become a prominent part of the current computing landscape, software applications are increasingly constructed to leverage heterogeneous architectures. Such a trend is already happening in the domain of machine learning and Internet-of-Things (IoT) systems built on edge devices. Yet, debugging and testing methods for heterogeneous applications are currently lacking. These applications may look similar to regular C/C++ code but include hardware synthesis details in terms of preprocessor directives. Therefore, their behavior under heterogeneous architectures may diverge significantly from CPU due to hardware synthesis details. Further, the compilation and hardware simulation cycle takes an enormous amount of time, prohibiting frequent invocations required for fuzz testing. We propose a novel fuzz testing technique, called HeteroFuzz, designed to specifically target heterogeneous applications and to detect platform-dependent divergence. The key essence of HeteroFuzz is that it uses a three-pronged approach to reduce the long latency of repetitively invoking a hardware simulator on a heterogeneous application. First, in addition to monitoring code coverage as a fuzzing guidance mechanism, we analyze synthesis pragmas in kernel code and monitor accelerator-relevant value spectra. Second, we design dynamic probabilistic mutations to increase the chance of hitting divergent behavior under different platforms. Third, we memorize the boundaries of seen kernel inputs and skip HLS simulator invocation if it can expose only redundant divergent behavior. We evaluate HeteroFuzz on seven real-world heterogeneous applications with FPGA kernels. HeteroFuzz is 754X faster in exposing the same set of distinct divergence symptoms than naive fuzzing. Probabilistic mutations contribute to 17.5X speed up than the one without. Selective invocation of HLS simulation contributes to 8.8X speed up than the one without.},
+    booktitle = {Proceedings of the 29th ACM Joint Meeting on European Software Engineering Conference and Symposium on the Foundations of Software Engineering},
+    publisher = {Association for Computing Machinery},
+    author = {Zhang, Qian and Wang, Jiyuan and Kim, Miryung},
+    year = {2021},
+    month = {Aug},
+    pages = {242–254},
+    collection = {ESEC/FSE 2021}
+}
+
+@inproceedings{fixreverter,
+    address = {Boston, MA, USA},
+    title = {FIXREVERTER: A Realistic Bug Injection Methodology for Benchmarking Fuzz Testing},
+    ISBN = {978-1-939133-31-1},
+    url = {https://www.usenix.org/conference/usenixsecurity22/presentation/zhang-zenong},
+    booktitle = {31st USENIX Security Symposium (USENIX Security 22)},
+    publisher = {USENIX Association},
+    author = {Zhang, Zenong and Patterson, Zach and Hicks, Michael and Wei, Shiyi},
+    year = {2022},
+    month = {Aug},
+    pages = {3699–3715}
+}
+
+@inproceedings{feature-oriented-corpus,
+    address = {Auckland New Zealand},
+    title = {A Feature-Oriented Corpus for Understanding, Evaluating and Improving Fuzz Testing},
+    ISBN = {978-1-4503-6752-3},
+    url = {https://dl.acm.org/doi/10.1145/3321705.3329845},
+    DOI = {10.1145/3321705.3329845},
+    booktitle = {Proceedings of the 2019 ACM Asia Conference on Computer and Communications Security},
+    publisher = {ACM},
+    author = {Zhu, Xiaogang and Feng, Xiaotao and Jiao, Tengyun and Wen, Sheng and Xiang, Yang and Camtepe, Seyit and Xue, Jingling},
+    year = {2019},
+    month = {Jul},
+    pages = {658–663},
+    language = {en}
 }
