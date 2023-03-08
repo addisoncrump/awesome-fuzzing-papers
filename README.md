@@ -10,9 +10,26 @@ to keep track of fuzzing papers recently and figure others are too, so I decided
 to make this.
 
 This repository contains summaries, bibliographies, and referrer/referee data
-for as many fuzzing papers and works as I could read and summarise.
+for as many fuzzing papers and works as I could read and summarise. Note that
+not everything must be an _academic_ paper; tool reports/whitepapers are also
+on the table, provided that they do not conflict with any requirements specified
+in the final section of this README.
 
 ## "I want a paper summarised!"
+
+Thank you for recommending a paper!
+
+At least the following fields should be present:
+- title
+- author
+- url
+- keywords (not necessarily the original keywords; TODO refer to the keyword list)
+- crossref (used slightly incorrectly; should be a comma-separated list of referenced papers)
+  - If you can also update existing entries which reference this paper,
+  please update their crossrefs!
+  - TODO figure out how to derive this; this is O(N^2) in person-work
+  - anystyle doesn't seem to work in many cases :(
+
 
 Please open an issue with the relevant issue template! :)
 
@@ -54,9 +71,3 @@ It should _not_ contain:
 [AFL++]: https://github.com/AFLplusplus/AFLplusplus
 [epi051's experience with LibAFL]: https://epi052.gitlab.io/notes-to-self/blog/2021-11-01-fuzzing-101-with-libafl/
 [Brendan Dolan-Gavitt's secondary analysis of NEUZZ]: https://twitter.com/moyix/status/1513608538500870154
-
-## Adding a new paper
-
-The following fields should be present:
- - author
- - 

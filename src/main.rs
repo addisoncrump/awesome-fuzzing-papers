@@ -59,7 +59,7 @@ fn main() -> Result<ExitCode, Box<dyn Error>> {
                     .insert(name);
             }
         } else {
-            log::warn!("Missing keywords for {name}.");
+            log::error!("Missing keywords for {name}.");
             data_missing = true;
         }
         if let Some(authors) = entry.fields.get("author") {

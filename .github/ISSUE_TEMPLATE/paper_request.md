@@ -14,6 +14,17 @@ assignees: ''
   editable by maintainers. You may also wish to submit a summary yourself, which
   I will gladly welcome.
 
+  Your BibTex should include (at least):
+    - title
+    - author
+    - url
+    - keywords (not necessarily the original keywords; TODO refer to the keyword list)
+    - crossref, a comma-separated list of papers already present in this repository
+        - If you can also update existing entries which reference this paper,
+          please update their crossrefs!
+        - TODO figure out how to derive this; this is O(N^2) in person-work
+        - anystyle doesn't seem to work in many cases :(
+
   Note that all papers submitted *MUST* be publicly accessible to be considered
   for summarisation and analysis.
 -->
