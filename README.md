@@ -12,6 +12,10 @@ to make this.
 This repository contains summaries, bibliographies, and referrer/referee data
 for as many fuzzing papers and works as I could read and summarise.
 
+## "I want a paper summarised!"
+
+Please open an issue with the relevant issue template! :)
+
 ## What content should be present
 
 This repository should contain the following information:
