@@ -19,6 +19,9 @@ fn main() -> Result<(), Box<dyn Error>> {
         if !summary_dir.join(name).exists() {
             log::warn!("Missing summary for {}.", name);
         }
+        if entry.fields.get("keywords").is_none() {
+            log::warn!("Missing keywords for {}.", name);
+        }
     }
 
     Ok(())
